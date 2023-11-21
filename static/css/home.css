@@ -1,0 +1,104 @@
+.content{
+
+}
+
+.features {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative; 
+}
+
+.bubble-features{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.bubble {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.logo-features {
+    filter: saturate(0%) brightness(100%) invert(100%);
+}
+
+.test{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test h1{
+    font-size: 3.5rem;
+}
+
+.test-button {
+  align-items: center;
+  appearance: none;
+  background-color: #00C5FC;
+  border-radius: 100px;
+  border-width: 0;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-presentation {
+    max-width: 50%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta cómo se ajusta la imagen en el contenedor */
+}
+
+.text-presentation {
+    width: 50%; 
+    text-align: left;
+    padding: 20px; 
+}
+
+.text-presentation h1,
+.text-presentation h3,
+.text-presentation p {
+    margin: 0;
+    padding: 0;
+}
+.text-presentation h1{
+    font-size: 4rem;
+}
+
+.text-presentation h3{
+    font-size: 2rem;
+}
+
+.text-presentation p {
+    color: gray;
+    font-size: 2rem;
+}
+
