@@ -1,58 +1,91 @@
-.content{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
 
+.content {
+    background-image: url("https://netland.cl/wp-content/uploads/2020/12/bg.png");
+  background-repeat: repeat;
 }
 
 .features {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    position: relative; 
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  position: relative;
 }
 
-.bubble-features{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+.bubble-features {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .bubble {
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
-    border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.video {
+  padding-bottom: -50px;
+}
+
+.video-player {
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 1920px;
+  height: 936px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    60% 100%,
+    50% 94%,
+    40% 100%,
+    0 100%
+  );
+  object-fit: cover;
 }
 
 .logo-features {
-    filter: saturate(0%) brightness(100%) invert(100%);
+  filter: saturate(0%) brightness(100%) invert(100%);
 }
 
-.test{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.test {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.test h1{
-    font-size: 3.5rem;
+.test h1 {
+  font-size: 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
 }
 
 .test-button {
   align-items: center;
   appearance: none;
-  background-color: #00C5FC;
+  background-color: #00c5fc;
   border-radius: 100px;
   border-width: 0;
   color: black;
   cursor: pointer;
   display: inline-flex;
-  font-family: CircularStd,sans-serif;
   font-size: 1rem;
   width: 300px;
   height: auto;
@@ -65,40 +98,61 @@
 }
 
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .img-presentation {
-    max-width: 50%; 
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Ajusta cómo se ajusta la imagen en el contenedor */
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
 .text-presentation {
-    width: 50%; 
-    text-align: left;
-    padding: 20px; 
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+
+.text-presentation h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .text-presentation h1,
 .text-presentation h3,
 .text-presentation p {
-    margin: 0;
-    padding: 0;
-}
-.text-presentation h1{
-    font-size: 4rem;
+  margin: 0;
+  padding: 0;
 }
 
-.text-presentation h3{
-    font-size: 2rem;
+.text-presentation h3 {
+  font-size: 2rem;
 }
 
 .text-presentation p {
-    color: gray;
-    font-size: 2rem;
+  color: gray;
+  font-size: 2rem;
 }
 
+.success {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.img-success img {
+  width: 375px;
+}
+.text-success {
+  width: 30%;
+  padding: 2%;
+  border: 2px #00c5fc dotted;
+  background-color: white;
+}
