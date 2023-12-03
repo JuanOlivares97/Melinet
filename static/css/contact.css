@@ -1,0 +1,28 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcont{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+  
+    width: 40%;
+    align-items: center;
+}
+
+.campcont{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
