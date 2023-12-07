@@ -13,23 +13,31 @@
     <link rel="shortcut icon"
         href="//img1.wsimg.com/isteam/ip/013b4373-e776-4c82-b321-dd18f9545312/favicon/24331179-1357-4c0b-9e84-db0434ae8088.png/:/rs=w:64,h:64,m"
         type="image/x-icon" />
-    <script refer src="static/js/form-contacto.js"></script>
+        <script defer src="/static/js/form-contacto.js"></script>
+        <script defer src="static/js/header-toggle.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <img class="logo"
-            src="http://img1.wsimg.com/isteam/ip/013b4373-e776-4c82-b321-dd18f9545312/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png/:/rs=w:221,h:101,cg:true,m/cr=w:221,h:101/qt=q:95"
-            alt="" />
+        <img class="logo" src="static/img/LOGO VECTOR.svg" alt="" />
         <div class="box-menu">
-            <a href="index.html" class="menu">Inicio</a>
-            <a href="planes-hogar.html" class="menu">Planes Hogar</a>
-            <a href="planes-empresa.html" class="menu">Planes Empresa</a>
-            <a href="servicios.html" class="menu">Servicios</a>
-            <a href="nosotros.html" class="menu">Nosotros</a>
-            <a href="contacto.html" class="menu">Contacto</a>
+          <a href="index.html" class="menu">Inicio</a>
+          <a href="planes-hogar.html" class="menu">Planes Hogar</a>
+          <a href="planes-empresa.html" class="menu">Planes Empresa</a>
+          <a href="servicios.html" class="menu">Servicios</a>
+          <a href="nosotros.html" class="menu">Nosotros</a>
+          <a href="contacto.html" class="menu">Contacto</a>
         </div>
-    </div>
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html" class="menu">Inicio</a>
+          <a href="planes-hogar.html" class="menu">Planes Hogar</a>
+          <a href="planes-empresa.html" class="menu">Planes Empresa</a>
+          <a href="servicios.html" class="menu">Servicios</a>
+          <a href="nosotros.html" class="menu">Nosotros</a>
+          <a href="contacto.html" class="menu">Contacto</a>
+        </div>
+      </div>
     <div class="content">
         <div class="video-container">
             <video autoplay muted loop>
@@ -194,9 +202,6 @@
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo electronico">
                 <input type="tel" name="telefono" pattern="[0-9]{9}" placeholder="Telefono">
-                <select id="regionSelect">
-                    <option value="metropolitana">-- Selecciona una region --</option>
-                </select>
                 <select id="comunaSelect">
                     <option value="metropolitana">-- Selecciona una comuna --</option>
                 </select>
@@ -221,6 +226,7 @@
         <hr class="bar" />
         <span>Copyright © 2023 Melinet.cl - Todos los derechos reservados.</span>
     </div>
+    
 </body>
 
 </html>
